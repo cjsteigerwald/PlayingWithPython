@@ -15,7 +15,12 @@ import time
 def main():
     original_file = "guru99.txt"
     if path.exists(original_file):
-        make_duplicate_file(original_file)
+        #make_duplicate_file(original_file)
+        rename(original_file)
+
+def rename(original_file):
+    # rename file
+    os.rename("guru99.txt", "career.guru99.txt")
 
 # make a duplicate of an existing file
 def make_duplicate_file(original_file):
